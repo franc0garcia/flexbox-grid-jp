@@ -82,3 +82,36 @@ nav ul a {
  .iconos .icono {
      flex: 0 1 2rem;
  }
+ /* dropdown */
+.dropdown ul{
+    display: flex;
+flex-direction: column;
+}
+@media screen and ( min-width:768px) {
+.dropdown ul{
+    flex-direction: row;
+}
+}
+.dropdown ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+.dropdown ul li {
+   position: relative;
+   display: flex;
+   flex: 1 1 100%;
+}
+.dropdown ul li ul {
+    display: none;
+    position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: rgb(255, 132, 0);
+}
+.dropdown ul li:hover ul {
+    display: flex;
+    flex-direction: column ;
+}
+ }
