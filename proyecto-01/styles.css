@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(211, 214, 220);
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-right: 300px;
+}
+.contenedor {
+  display: flex;
+  background-color: rgb(20, 163, 220);
+  flex-direction: column;
+
+}
+.elemento1,
+.elemento2,
+.elemento3 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+    margin: 20px;
+    background-color: cornsilk;
+    height: 100px;
+}
+
+.simpsons {
+    height: 160px;
+
+
+}
+
+
+.row-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap ;
+    justify-content: center;
+}
+.button {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+    border-radius: 5px;
+    height: 40px;
+    width: 136px;
+    position: absolute;
+    top: 35px;
+    right: 7px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #0d6efd;
+    color: #fafafa;
+}
+
+.button:hover .icono {
+    color: #fafafa;
+}
+
+.icono {
+    font-size: 28px;
+    color: #0d6efd;
+    margin-right: 10px;
+}
